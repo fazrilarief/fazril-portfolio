@@ -58,18 +58,10 @@
                     >About Me
                   </a>
                 </li>
-                <!-- Blogs -->
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
-                    >Blogs
-                  </a>
-                </li>
                 <!-- Portoflios -->
                 <li class="group">
                   <a
-                    href="#home"
+                    href="#portoflio"
                     class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
                     >Portoflios</a
                   >
@@ -77,10 +69,18 @@
                 <!-- Certificates -->
                 <li class="group">
                   <a
-                    href="#home"
+                    href="#certificate"
                     class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
                     >Certificates</a
                   >
+                </li>
+                <!-- Blogs -->
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
+                    >Blogs
+                  </a>
                 </li>
                 <!-- Educations -->
                 <li class="group">
@@ -164,13 +164,104 @@
             <h4 class="font-bold uppercase text-primary text-lg mb-3">
               About Me
             </h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-3xl">
+            <h2 class="font-bold text-dark max-w-md text-2xl mb-4 lg:text-3xl">
               Highly passionate in web develpment.
             </h2>
-            <p class="text-secondary font-medium text-base max-w-xl lg:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis ducimus magnam reprehenderit.
-            </p>
+            <div class="container-fluid grid grid-cols-1 md:grid-cols-2">
+              <!-- Frontend Stack -->
+              <div class="container-fluid mb-5">
+                <h4 class="mb-2 font-semibold">Front-End Stack</h4>
+                <div class="flex flex-nowrap">
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=html"
+                      class="w-8 h-8"
+                      alt="html5 logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=css"
+                      class="w-8 h-8"
+                      alt="css3 logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=js"
+                      class="w-8 h-8"
+                      alt="javascript logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=bootstrap"
+                      class="w-8 h-8"
+                      alt="bootstrap logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=tailwind"
+                      class="w-8 h-8"
+                      alt="bootstrap logo"
+                    />
+                  </span>
+                </div>
+              </div>
+              <!-- Frontend Stack End -->
+              <!-- Backend Stack -->
+              <div class="container-fluid mb-5">
+                <h4 class="mb-2 font-semibold">Back-End Stack</h4>
+                <div class="flex">
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=php"
+                      class="w-8 h-8"
+                      alt="html5 logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=laravel"
+                      class="w-8 h-8"
+                      alt="css3 logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=express"
+                      class="w-8 h-8"
+                      alt="javascript logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=prisma"
+                      class="w-8 h-8"
+                      alt="bootstrap logo"
+                    />
+                  </span>
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=mysql"
+                      class="w-8 h-8"
+                      alt="bootstrap logo"
+                    />
+                  </span>
+                </div>
+                <div class="flex mt-2">
+                  <span class="mx-1">
+                    <img
+                      src="https://skillicons.dev/icons?i=postman"
+                      class="w-8 h-8"
+                      alt="bootstrap logo"
+                    />
+                  </span>
+                </div>
+              </div>
+              <!-- Backend Stack End -->
+            </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
@@ -287,7 +378,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section -->
-    <section id="Portfolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portoflio" class="pt-36 pb-20 bg-slate-50">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -317,7 +408,7 @@
                     target="_blank"
                   >
                     <img
-                      src="./src/images/kerjain.com.png"
+                      src="./src/images/portfolios/kerjain.com.png"
                       alt="kerjain.com"
                       class="hover:scale-110"
                     />
@@ -402,7 +493,7 @@
                     target="_blank"
                   >
                     <img
-                      src="./src/images/bacabuku.png"
+                      src="./src/images/portfolios/bacabuku.png"
                       alt="bacabuku"
                       class="hover:scale-110"
                     />
@@ -487,7 +578,7 @@
                     target="_blank"
                   >
                     <img
-                      src="./src/images/laracuss.png"
+                      src="./src/images/portfolios/laracuss.png"
                       alt="laracuss"
                       class="hover:scale-110"
                     />
@@ -535,7 +626,21 @@
                     </span>
                     <span class="mx-1">
                       <img
+                        src="https://skillicons.dev/icons?i=bootstrap"
+                        alt="Laravel logo"
+                        class="w-6 h-6"
+                      />
+                    </span>
+                    <span class="mx-1">
+                      <img
                         src="https://skillicons.dev/icons?i=laravel"
+                        alt="Laravel logo"
+                        class="w-6 h-6"
+                      />
+                    </span>
+                    <span class="mx-1">
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql"
                         alt="Laravel logo"
                         class="w-6 h-6"
                       />
@@ -576,6 +681,144 @@
     </section>
     <!-- Portfolio Section End -->
 
+    <!-- Certficates Section  -->
+    <section id="certificate" class="pt-36 pb-20">
+      <div class="container">
+        <div class="w-full">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-primary font-bold text-lg mb-2 uppercase">
+              Certificate
+            </h4>
+            <h2 class="text-dark font-bold text-3xl mb-4">
+              Featured Certificate
+            </h2>
+            <p class="font-medium text-md text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              fugit cupiditate rem repellendus amet labore illum quasi quis quas
+              esse?
+            </p>
+          </div>
+          <!-- CONTAINER -->
+          <div class="flex justify-center container mx-auto">
+            <!-- GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <!-- CARD -->
+              <div class="rounded-xl shadow-lg mb-3 md:mx-3">
+                <div
+                  class="rounded-xl overflow-hidden flex items-center shadow-md h-[320px] hover:opacity-80"
+                >
+                  <a
+                    href="https://www.dicoding.com/certificates/JMZVDN3LQZN9"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/images/certificates/dicoding.png"
+                      alt="dicoding"
+                      class="hover:scale-105"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- CARD END -->
+              <!-- CARD -->
+              <div class="rounded-xl shadow-lg mb-3 md:mx-3">
+                <div
+                  class="rounded-xl overflow-hidden flex items-center shadow-md h-[320px] hover:opacity-80"
+                >
+                  <a
+                    href="https://www.dicoding.com/certificates/L4PQQ8GNVPO1"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/images/certificates/dicoding-fe.png"
+                      alt="Certficate"
+                      class="hover:scale-105"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- CARD END -->
+              <!-- CARD -->
+              <div class="rounded-xl shadow-lg mb-3 md:mx-3">
+                <div
+                  class="rounded-xl overflow-hidden flex items-center shadow-md h-[320px] hover:opacity-80"
+                >
+                  <a
+                    href="https://buildwithangga.com/talent/fazrilarief331/full-stack-laravel-forum-web-app-complete-guide-2024"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/images/certificates/bwa-laracuss.png"
+                      alt="sertifikat-BWA-Laracuss"
+                      class="hover:scale-105"
+                      s
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- CARD END -->
+              <!-- CARD -->
+              <div class="rounded-xl shadow-lg mb-3 md:mx-3">
+                <div
+                  class="rounded-xl overflow-hidden flex items-center shadow-md h-[320px] hover:opacity-80"
+                >
+                  <a
+                    href="https://www.sololearn.com/Certificate/CC-OQXYLJMF/jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/images/certificates/html.jpg"
+                      alt="HTML Dasar"
+                      class="hover:scale-105"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- CARD END -->
+              <!-- CARD -->
+              <div class="rounded-xl shadow-lg mb-3 md:mx-3">
+                <div
+                  class="rounded-xl overflow-hidden flex items-center shadow-md h-[320px] hover:opacity-80"
+                >
+                  <a
+                    href="https://www.sololearn.com/Certificate/CT-QMYQOXHW/jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/images/certificates/php.jpg"
+                      alt="PHP"
+                      class="hover:scale-105"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- CARD END -->
+              <!-- CARD -->
+              <div class="rounded-xl shadow-lg mb-3 md:mx-3">
+                <div
+                  class="rounded-xl overflow-hidden flex items-center shadow-md h-[320px] hover:opacity-80"
+                >
+                  <a
+                    href="https://www.testdome.com/certificates/e14e50344eed461b943e1cd79fc0b6b1"
+                    target="_blank"
+                  >
+                    <img
+                      src="./src/images/certificates/testDome.png"
+                      alt="testdome"
+                      class="hover:scale-105"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- CARD END -->
+            </div>
+            <!-- GRID END -->
+          </div>
+          <!-- CONTAINER END -->
+        </div>
+      </div>
+    </section>
+    <!-- Certficates Section End -->
     <script src="./src/js/script.js"></script>
   </body>
 </html>
