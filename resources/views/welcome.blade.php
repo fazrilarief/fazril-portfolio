@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet" />
+    {{-- Bootstrap Icons --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -58,23 +60,27 @@
                                 <a href="#certificate"
                                     class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4">Certificates</a>
                             </li>
-                            <!-- Blogs -->
+                            <!-- About -->
                             <!-- <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
-                    >Blogs
-                  </a>
-                </li> -->
-
+                            <a
+                                href="#about"
+                                class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
+                                >Blogs
+                            </a>
+                            </li> -->
                             <!-- Educations -->
                             <!-- <li class="group">
-                  <a
-                    href="#home"
-                    class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
-                    >Educations</a
-                  >
-                </li> -->
+                            <a
+                                href="#home"
+                                class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4"
+                                >Educations</a
+                            >
+                            </li> -->
+                            <!-- Blogs -->
+                            <li class="group">
+                                <a href="#blog"
+                                    class="text-base text-dark py-2 mx-8 lg:mx-6 flex hover:text-primary hover:underline underline-offset-4">Blog</a>
+                            </li>
 
                             <!-- Contact Me -->
                             <li class="group">
@@ -85,7 +91,7 @@
 
                             <li class="group sm:ml-7">
                                 <a href="{{ asset('Fazril Arief Nugraha - CV.pdf') }}" target="_blank" download
-                                    class="text-base font-semibold text-white bg-primary py-2 px-4 rounded-md hover: shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                                    class="text-base font-semibold text-white bg-primary py-2 px-4 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
                                     Download CV
                                 </a>
                             </li>
@@ -323,13 +329,13 @@
                                 <a href="https://fazrilarief.github.io/kerjain.com/" target="_blank"
                                     class="hover:text-primary">Kerjain.com</a>
                             </h3>
-                            <p class="text-slate-500 text-base">
+                            {{-- <p class="text-slate-500 text-base">
                                 Project ini merupakan salah satu tugas dari kelas yang saya
                                 ikuti pada platform belajar, Dicoding. Project ini saya bangun
                                 menggunakan HTML, CSS, dan Javascript tanpa <i>framework</i>.
                                 Website sederhana ini saya bangun sebagai sarana untuk mencari
                                 pekerjaan freelance.
-                            </p>
+                            </p> --}}
                             <div class="container-fluid mt-5 flex justify-between items-center">
                                 <div class="flex">
                                     <span class="mx-1">
@@ -376,13 +382,13 @@
                                 <a href="https://fazrilarief.github.io/baca-buku/" target="_blank"
                                     class="hover:text-primary">Bacabuku To Do List</a>
                             </h3>
-                            <p class="text-slate-500 text-base">
+                            {{-- <p class="text-slate-500 text-base">
                                 Website sederhana ini saya bangun menggunakan HTML, CSS, dan
                                 Jacascript basic dan menerapkan penyimpanan local web storage
                                 dalam penyimpana datanya. Website ini saya bangun sebagai
                                 salah satu tugas dari kelas yang saya ikuti pada platform
                                 Dicoding.
-                            </p>
+                            </p> --}}
                             <div class="container-fluid mt-5 flex justify-between items-center">
                                 <div class="flex">
                                     <span class="mx-1">
@@ -432,12 +438,12 @@
                                     Laracuss - Laravel Discuss
                                 </a>
                             </h3>
-                            <p class="text-slate-500 text-base">
+                            {{-- <p class="text-slate-500 text-base">
                                 Project ini saya bangun menggunakan <i>framework</i> Laravel
                                 sebagai salah satu tools backend. Website ini dibangun sebagai
                                 sarana diskusi kepada sesama programmer Laravel, pemula dapat
                                 bertanya dan akan langsung dijawab oleh ahlinya.
-                            </p>
+                            </p> --}}
                             <div class="container-fluid mt-5 flex justify-between items-center">
                                 <div class="flex">
                                     <span class="mx-1">
@@ -469,6 +475,60 @@
                                     <span
                                         class="w-9 h-9 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:text-white">
                                         <a href="https://github.com/fazrilarief/laracuss" target="_blank">
+                                            <svg role="img" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg" width="20"
+                                                class="fill-current">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                            </svg>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD END -->
+                    <!-- CARD -->
+                    <div class="rounded-xl shadow-lg bg-white mb-3 md:mx-3">
+                        <div class="p-5 flex flex-col">
+                            <div class="rounded-xl overflow-hidden flex items-center shadow-md h-[220px]">
+                                <a href="https://kasih-saya-jokes.vercel.app/" target="_blank">
+                                    <img src="{{ asset('images/portfolios/kasih-saya-jokes.png') }}" alt="laracuss"
+                                        class="hover:scale-110" />
+                                </a>
+                            </div>
+                            <h3 class="text-xl font-semibold mt-5 mb-3">
+                                <a href="https://kasih-saya-jokes.vercel.app/" target="_blank"
+                                    class="hover:text-primary">
+                                    Kasih Saya Jokes - Father Jokes Generator
+                                </a>
+                            </h3>
+                            {{-- <p class="text-slate-500 text-base">
+                                Project ini saya bangun menggunakan <i>framework</i> Laravel
+                                sebagai salah satu tools backend. Website ini dibangun sebagai
+                                sarana diskusi kepada sesama programmer Laravel, pemula dapat
+                                bertanya dan akan langsung dijawab oleh ahlinya.
+                            </p> --}}
+                            <div class="container-fluid mt-5 flex justify-between items-center">
+                                <div class="flex">
+                                    <span class="mx-1">
+                                        <img src="https://skillicons.dev/icons?i=html" alt="html5 logo"
+                                            class="w-6 h-6" />
+                                    </span>
+                                    <span class="mx-1">
+                                        <img src="https://skillicons.dev/icons?i=css" alt="CSS logo"
+                                            class="w-6 h-6" />
+                                    </span>
+                                    <span class="mx-1">
+                                        <img src="https://skillicons.dev/icons?i=js" alt="JS logo"
+                                            class="w-6 h-6" />
+                                    </span>
+                                </div>
+                                <div class="github">
+                                    <span
+                                        class="w-9 h-9 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:text-white">
+                                        <a href="https://github.com/fazrilarief/kasih-saya-jokes" target="_blank">
                                             <svg role="img" viewBox="0 0 24 24"
                                                 xmlns="http://www.w3.org/2000/svg" width="20"
                                                 class="fill-current">
@@ -590,11 +650,86 @@
     <!-- Certficate Section End -->
 
     <!-- Blog Section -->
-    <!-- <div id="blog" class="pt-36 pb-32 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4 md:flex md:items-center"></div>
-      </div>
-    </div> -->
+    <div id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="text-primary font-bold text-lg mb-2 uppercase">
+                        Blog
+                    </h4>
+                    <h2 class="text-dark font-bold text-3xl mb-4">
+                        Featured Blog
+                    </h2>
+                    <p class="font-medium text-md text-secondary">
+                        I've also attended programming classes several times to enhance my
+                        skills and knowledge in the field of web programming,
+                        specifically.
+                    </p>
+                </div>
+
+                <!-- CONTAINER -->
+                <div class="flex items-center justify-center container mx-auto">
+                    <!-- GRID -->
+                    <div class="grid flex justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                        <!-- CARD -->
+                        <div class="rounded-xl shadow-lg bg-white mb-3 md:mx-3">
+                            <div class="flex flex-col">
+                                <div class="mx-5 mb-5 mt-3">
+                                    <h3 class="text-xl font-semibold mt-3 mb-3">
+                                        <a href="https://fazrilarief.github.io/kerjain.com/" target="_blank"
+                                            class="hover:text-primary">Menghubungkan Bot Telegram dengan Laravel 10
+                                            untuk Mengirim Pesan</a>
+                                    </h3>
+                                    <div class="flex">
+                                        <div class="col-6">28 Feb 2024</div>
+                                    </div>
+                                    <div class="container-fluid mt-5 flex justify-between items-center">
+                                        <a href="https://medium.com/@mynameisJRIKS/menghubungkan-bot-telegram-dengan-laravel-10-untuk-mengirim-pesan-82c82bee1a98"
+                                            class="text-base font-semibold bg-primary text-white py-2 px-4 w-full text-center rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD END -->
+
+                        <!-- CARD -->
+                        <div class="rounded-xl shadow-lg bg-white mb-3 md:mx-3">
+                            <div class="flex flex-col">
+                                <div class="mx-5 mb-5 mt-3">
+                                    <h3 class="text-xl font-semibold mt-3 mb-3">
+                                        <a href="https://medium.com/@mynameisJRIKS/membangun-karir-developer-yang-handal-bersama-codepolitan-dan-alibaba-cloud-4317862d2468"
+                                            target="_blank" class="hover:text-primary">Membangun Karir Developer yang
+                                            Andal Bersama Codepolitan dan Alibaba Cloud</a>
+                                    </h3>
+                                    <div class="flex">
+                                        <div class="col-6">24 Feb 2024</div>
+                                    </div>
+                                    <div class="container-fluid mt-5 flex justify-between items-center">
+                                        <a href="https://medium.com/@mynameisJRIKS/membangun-karir-developer-yang-handal-bersama-codepolitan-dan-alibaba-cloud-4317862d2468"
+                                            class="text-base font-semibold bg-primary text-white py-2 px-4 w-full text-center rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD END -->
+                    </div>
+                    <!-- GRID END -->
+                </div>
+                <!-- CONTAINER END-->
+
+                {{-- <div class="flex justify-center mt-5 flex-nowrap">
+                    <a href="{{ url('/blogs') }}" target="_blank"
+                        class="text-base font-semibold hover:text-primary transition duration-300 ease-in-out">
+                        View All <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div> --}}
+            </div>
+        </div>
+    </div>
     <!-- Blog Section End-->
 
     <!-- Education Section -->
@@ -606,7 +741,7 @@
     <!-- Education Section End -->
 
     <!-- CTA-Contact Section -->
-    <div id="contact" class="pt-36 pb-32 bg-slate-100">
+    <div id="contact" class="pt-36 pb-32">
         <div class="container">
             <div class="w-full px-4 md:flex md:items-center">
                 <div class="max-w-xl mx-auto text-center mb-16">
