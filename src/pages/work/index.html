@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazril Arief Nugraha</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Alpine JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="home">
+      <div class="navbar-scroll fixed bg-white z-10 left-0 right-0">
+        <nav class="container flex justify-between items-center pt-6 pb-3">
+          <!-- <div class="md:hidden">
+                  <img src="public/assets/icons/hamburger.png" alt="hamburger-icon" />
+                </div> -->
+          <a
+            href="../../../index.html"
+            class="nav-link hover:cursor-pointer text-3xl font-bold tracking-widest"
+          >
+            <p>F<span class="text-primary">A</span></p>
+          </a>
+          <div class="hidden lg:block -right-2">
+            <ul class="flex justify-between gap-8 font-medium text-xl">
+              <li>
+                <a href="#work" class="nav-link active">Works</a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-link">Blog</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <!-- <li>
+                      <a href="#home" class="nav-link">Home</a>
+                    </li> -->
+            </ul>
+          </div>
+
+          <!-- Navbar Mobile -->
+          <div
+            class="fixed bottom-0 bg-white w-full right-0 z-10 rounded-2xl border-t-[1px] lg:hidden"
+          >
+            <ul class="flex justify-evenly gap-5 py-5">
+              <li>
+                <a href="#work" class="nav-link active">
+                  <i class="fa-solid fa-list-check"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-link">
+                  <i class="fa-solid fa-pen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#home" class="nav-link">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="container pt-24 md:px-20">
+        <div
+          class="flex flex-col md:flex-row md:justify-between py-2 md:py-6 md:mb-4 items-center"
+        >
+          <h1 class="font-bold text-3xl">Works</h1>
+        </div>
+        <div class="space-y-14 py-2 md:py-6 md:mb-6">
+          <!-- card work -->
+          <div>
+            <div class="md:flex md:gap-5">
+              <div
+                class="max-w-[340px] h-[200px] md:max-w-[246px] md:h-[180px] mb-4 md:mb-0 md:basis-2/5"
+              >
+                <img
+                  src="/public/assets/images/work.png"
+                  alt="work-image"
+                  class="object-cover w-full h-full rounded-md"
+                />
+              </div>
+              <div class="md:basis-3/5">
+                <a
+                  class="font-bold text-2xl md:mt-0 hover:text-secondary hover:cursor-pointer"
+                >
+                  Designing Dashboard
+                </a>
+                <div class="flex gap-4 mt-4">
+                  <p
+                    class="font-black text-base text-white px-3 bg-badge-color rounded-3xl"
+                  >
+                    2020
+                  </p>
+                  <p class="font-normal text-base text-light">Dashboard</p>
+                </div>
+                <p class="tracking-wide mt-6">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- card work -->
+          <div>
+            <div class="md:flex md:gap-5">
+              <div
+                class="max-w-[340px] h-[200px] md:max-w-[246px] md:h-[180px] md:basis-2/5 mb-4 md:mb-0"
+              >
+                <img
+                  src="/public/assets/images/work.png"
+                  alt="work-image"
+                  class="object-cover w-full h-full rounded-md"
+                />
+              </div>
+              <div class="md:basis-3/5">
+                <a
+                  class="font-bold text-2xl mt-4 md:mt-0 hover:text-secondary hover:cursor-pointer"
+                >
+                  Designing Dashboard
+                </a>
+                <div class="flex gap-4 mt-4">
+                  <p
+                    class="font-black text-base text-white px-3 bg-badge-color rounded-3xl"
+                  >
+                    2020
+                  </p>
+                  <p class="font-normal text-base text-light">Dashboard</p>
+                </div>
+                <p class="tracking-wide mt-6">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- card work -->
+          <div>
+            <div class="md:flex md:gap-5">
+              <div
+                class="max-w-[340px] h-[200px] md:max-w-[246px] md:h-[180px] md:basis-2/5 mb-4 md:mb-0"
+              >
+                <img
+                  src="/public/assets/images/work.png"
+                  alt="work-image"
+                  class="object-cover w-full h-full rounded-md"
+                />
+              </div>
+              <div class="md:basis-3/5">
+                <a
+                  class="font-bold text-2xl mt-4 md:mt-0 hover:text-secondary hover:cursor-pointer"
+                >
+                  Designing Dashboard
+                </a>
+                <div class="flex gap-4 mt-4">
+                  <p
+                    class="font-black text-base text-white px-3 bg-badge-color rounded-3xl"
+                  >
+                    2020
+                  </p>
+                  <p class="font-normal text-base text-light">Dashboard</p>
+                </div>
+                <p class="tracking-wide mt-6">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- card work -->
+          <div>
+            <div class="md:flex md:gap-5">
+              <div
+                class="max-w-[340px] h-[200px] md:max-w-[246px] md:h-[180px] md:basis-2/5 mb-4 md:mb-0"
+              >
+                <img
+                  src="/public/assets/images/work.png"
+                  alt="work-image"
+                  class="object-cover w-full h-full rounded-md"
+                />
+              </div>
+              <div class="md:basis-3/5">
+                <a
+                  class="font-bold text-2xl mt-4 md:mt-0 hover:text-secondary hover:cursor-pointer"
+                >
+                  Designing Dashboard
+                </a>
+                <div class="flex gap-4 mt-4">
+                  <p
+                    class="font-black text-base text-white px-3 bg-badge-color rounded-3xl"
+                  >
+                    2020
+                  </p>
+                  <p class="font-normal text-base text-light">Dashboard</p>
+                </div>
+                <p class="tracking-wide mt-6">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- card work -->
+          <div>
+            <div class="md:flex md:gap-5">
+              <div
+                class="max-w-[340px] h-[200px] md:max-w-[246px] md:h-[180px] md:basis-2/5 mb-4 md:mb-0"
+              >
+                <img
+                  src="/public/assets/images/work.png"
+                  alt="work-image"
+                  class="object-cover w-full h-full rounded-md"
+                />
+              </div>
+              <div class="md:basis-3/5">
+                <a
+                  class="font-bold text-2xl mt-4 md:mt-0 hover:text-secondary hover:cursor-pointer"
+                >
+                  Designing Dashboard
+                </a>
+                <div class="flex gap-4 mt-4">
+                  <p
+                    class="font-black text-base text-white px-3 bg-badge-color rounded-3xl"
+                  >
+                    2020
+                  </p>
+                  <p class="font-normal text-base text-light">Dashboard</p>
+                </div>
+                <p class="tracking-wide mt-6">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="join">
+            <button class="join-item btn btn-active">1</button>
+            <button class="join-item btn">2</button>
+            <button class="join-item btn">3</button>
+            <button class="join-item btn">4</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container mt-20 mb-20 md:mb-0">
+        <div class="py-10 flex flex-col justify-center items-center gap-5">
+          <ul class="flex justify-center items-center gap-6">
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/fb.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/insta.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/twt.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/Linkedin.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="font-normal text-sm">Copyright ©2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navbar = document.querySelector(".navbar-scroll");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-border");
+        } else {
+          navbar.classList.remove("navbar-border");
+        }
+      });
+    </script>
+  </body>
+</html>

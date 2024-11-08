@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazril Arief Nugraha</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Alpine JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="home">
+      <div class="navbar-scroll fixed bg-white z-10 left-0 right-0">
+        <nav class="container flex justify-between items-center pt-6 pb-3">
+          <!-- <div class="md:hidden">
+                  <img src="public/assets/icons/hamburger.png" alt="hamburger-icon" />
+                </div> -->
+          <a
+            href="../../../index.html"
+            class="nav-link hover:cursor-pointer text-3xl font-bold tracking-widest"
+          >
+            <p>F<span class="text-primary">A</span></p>
+          </a>
+          <div class="hidden lg:block -right-2">
+            <ul class="flex justify-between gap-8 font-medium text-xl">
+              <li>
+                <a href="#work" class="nav-link">Works</a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-link active">Blog</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <!-- <li>
+                      <a href="#home" class="nav-link">Home</a>
+                    </li> -->
+            </ul>
+          </div>
+
+          <!-- Navbar Mobile -->
+          <div
+            class="fixed bottom-0 bg-white w-full right-0 z-10 rounded-2xl border-t-[1px] lg:hidden"
+          >
+            <ul class="flex justify-evenly gap-5 py-5">
+              <li>
+                <a href="#work" class="nav-link">
+                  <i class="fa-solid fa-list-check"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-link active">
+                  <i class="fa-solid fa-pen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#home" class="nav-link">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="container pt-24 md:px-20">
+        <div class="flex pb-4 items-center">
+          <a
+            href="../blog/index.html"
+            class="py-2 md:py-6 font-bold text-3xl md:mb-4 hover:cursor-pointer"
+          >
+            <i
+              class="fa-solid fa-arrow-left hover:text-primary duration-300"
+            ></i>
+          </a>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex justify-start items-center gap-5">
+            <img
+              src="../../../public/assets/images/minato.jpg"
+              alt="user"
+              class="w-20 h-20 rounded-full object-cover"
+            />
+            <div class="">
+              <h1 class="font-bold text-xl">Namikaze Minato</h1>
+              <p class="text-light text-base">
+                Hokage ke-4 dan tukang segel kyubi
+              </p>
+              <p class="text-light text-base">Feb 8, 2022</p>
+            </div>
+          </div>
+          <div>
+            <!-- post title -->
+            <div class="pt-6 pb-4">
+              <h1 class="font-bold text-xl md:text-3xl">
+                Tutorial Mengadu Ayam Jago Agar Menang
+              </h1>
+              <p class="text-sm italic text-light">
+                Tags: Web Development, Laravel
+              </p>
+            </div>
+
+            <!-- post thumbnail -->
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="../../../public/assets/images/tailwind-thumbnail.png"
+                alt="thumbnail"
+                class="w-full rounded-md"
+              />
+              <a
+                href="https://www.petanikode.com/tailwind-dasar/"
+                target="_blank"
+                class="hover:text-secondary italic text-light text-sm pb-4 pt-2"
+              >
+                www.petanicode.com/image
+              </a>
+            </div>
+
+            <!-- post content -->
+            <p class="tracking-wide text-justify leading-8">
+              Panduan Dasar Tailwind CSS untuk Pemula Tailwind CSS adalah
+              framework CSS yang berfokus pada pendekatan utility-first, yang
+              berarti framework ini menyediakan class siap pakai untuk
+              menerapkan berbagai gaya ke elemen HTML. Berbeda dengan pendekatan
+              tradisional, di mana kita membuat aturan CSS di file terpisah,
+              Tailwind memungkinkan kita langsung menambahkan class yang relevan
+              ke elemen HTML. Dalam tutorial ini, kita akan membahas
+              langkah-langkah dasar untuk memulai dan beberapa utility class
+              yang umum digunakan dalam Tailwind CSS. Apa itu Tailwind CSS?
+              Tailwind CSS adalah framework CSS yang sangat populer di kalangan
+              pengembang frontend. Didesain untuk meningkatkan produktivitas,
+              Tailwind menawarkan banyak utility class sehingga kita bisa menata
+              elemen secara langsung tanpa perlu menulis CSS manual. Framework
+              ini juga mendukung kustomisasi melalui file konfigurasi,
+              memungkinkan kita mengatur tema dan skema warna sesuai kebutuhan
+              proyek.
+              <br />
+              Langkah 1: Instalasi Tailwind CSS Untuk memulai menggunakan
+              Tailwind, ada beberapa cara instalasi yang bisa dipilih. Jika Anda
+              baru mencoba Tailwind, cara paling cepat adalah melalui CDN. Ini
+              memungkinkan Anda langsung menggunakan Tailwind tanpa harus
+              menginstal apa pun. Namun, jika Anda mengerjakan proyek yang lebih
+              besar atau membutuhkan kustomisasi, instalasi menggunakan npm
+              lebih disarankan. Setelah menginstal, Anda dapat menyesuaikan file
+              konfigurasi Tailwind untuk menetapkan pengaturan default sesuai
+              kebutuhan proyek. Langkah 2: Menggunakan Utility Class Dasar
+              Setelah Tailwind CSS siap, Anda dapat mulai menggunakan utility
+              class yang disediakan.
+              <br />
+              Berikut adalah beberapa utility dasar yang sering dipakai: Warna
+              Latar Belakang (Background Color): Mengubah warna latar belakang
+              elemen menggunakan utility class Tailwind memungkinkan Anda untuk
+              menerapkan tema warna dengan cepat dan konsisten. Anda cukup
+              menggunakan class warna yang diinginkan tanpa harus menulis kode
+              CSS baru. Margin dan Padding: Tailwind menyediakan utility untuk
+              margin dan padding yang membantu menjaga jarak antar elemen dengan
+              lebih konsisten. Tailwind mengonversi nilai-nilai margin dan
+              padding ke skala yang mudah digunakan dan dipahami. Tipografi:
+              Untuk mengatur gaya teks seperti ukuran font, warna, dan
+              ketebalan, Tailwind menawarkan berbagai utility class. Ini
+              memungkinkan Anda untuk menyesuaikan tampilan teks dengan sangat
+              mudah tanpa menambahkan CSS tambahan. Responsivitas: Tailwind CSS
+              dilengkapi dengan fitur responsif yang memungkinkan Anda mengatur
+              gaya berbeda pada berbagai ukuran layar. Anda cukup menambahkan
+              prefix responsif yang sesuai untuk menyesuaikan elemen pada
+              berbagai perangkat, mulai dari mobile hingga desktop. Langkah 3:
+              Mengoptimalkan Kode dengan Tailwind Setelah membiasakan diri
+              dengan utility class dasar, langkah berikutnya adalah
+              mengoptimalkan kode Anda. Tailwind memungkinkan penggunaan class
+              secara fleksibel, dan Anda juga dapat membuat component class
+              untuk mengelompokkan gaya yang sering digunakan. Selain itu,
+              dengan fitur "PurgeCSS" bawaan, Anda dapat menghapus CSS yang
+              tidak terpakai, sehingga ukuran file tetap ringan dan performa
+              tetap optimal. Kesimpulan Tailwind CSS adalah pilihan yang sangat
+              baik untuk membuat antarmuka yang konsisten dan responsif. Dengan
+              utility class yang lengkap dan fleksibilitas dalam kustomisasi,
+              Tailwind sangat cocok untuk pengembangan proyek kecil hingga
+              besar. Setelah memahami dasar-dasar ini, Anda bisa mengeksplorasi
+              fitur lain seperti tema kustom dan penggunaan plugin untuk
+              memperkaya proyek Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container mt-20 mb-20 md:mb-0">
+        <div class="py-10 flex flex-col justify-center items-center gap-5">
+          <ul class="flex justify-center items-center gap-6">
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/fb.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/insta.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/twt.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/Linkedin.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="font-normal text-sm">Copyright ©2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../scripts/script.js"></script>
+  </body>
+</html>

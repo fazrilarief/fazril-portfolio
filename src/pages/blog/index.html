@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazril Arief Nugraha</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Alpine JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="home">
+      <div class="navbar-scroll fixed bg-white z-10 left-0 right-0">
+        <nav class="container flex justify-between items-center pt-6 pb-3">
+          <!-- <div class="md:hidden">
+                  <img src="public/assets/icons/hamburger.png" alt="hamburger-icon" />
+                </div> -->
+          <a
+            href="../../../index.html"
+            class="nav-link hover:cursor-pointer text-3xl font-bold tracking-widest"
+          >
+            <p>F<span class="text-primary">A</span></p>
+          </a>
+          <div class="hidden lg:block -right-2">
+            <ul class="flex justify-between gap-8 font-medium text-xl">
+              <li>
+                <a href="#work" class="nav-link">Works</a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-link active">Blog</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <!-- <li>
+                      <a href="#home" class="nav-link">Home</a>
+                    </li> -->
+            </ul>
+          </div>
+
+          <!-- Navbar Mobile -->
+          <div
+            class="fixed bottom-0 bg-white w-full right-0 z-10 rounded-2xl border-t-[1px] lg:hidden"
+          >
+            <ul class="flex justify-evenly gap-5 py-5">
+              <li>
+                <a href="#work" class="nav-link">
+                  <i class="fa-solid fa-list-check"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-link active">
+                  <i class="fa-solid fa-pen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#home" class="nav-link">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="container pt-24 md:px-20">
+        <div
+          class="flex flex-col md:flex-row md:justify-between py-2 md:py-6 md:mb-4 items-center"
+        >
+          <h1 class="font-bold text-3xl">Blog</h1>
+          <label class="relative py-4 block">
+            <span class="sr-only">Search</span>
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              id="filter"
+              class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+              placeholder="Search blog"
+              type="text"
+              name="search"
+            />
+          </label>
+        </div>
+        <div class="flex flex-col gap-4 mt-6 md:mt-0 md:gap-10 pb-8">
+          <!-- Card Post -->
+          <div class="post-item flex flex-col">
+            <a
+              href="../blog/details-blog.html"
+              class="font-medium text-xl md:text-2xl leading-7 mb-1 hover:text-secondary hover:cursor-pointer"
+            >
+              UI Interactions of the week
+            </a>
+            <div class="font-normal text-base flex gap-3 mb-3">
+              <p>12 Feb 2020</p>
+              <div class="border-l-[1px] y border-gray-800"></div>
+              <p class="text-light">Design, Pattern</p>
+            </div>
+            <p class="font-normal text-base tracking-normal">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- Card Post -->
+          <div class="post-item flex flex-col">
+            <a
+              href="../blog/details-blog.html"
+              class="font-medium text-xl md:text-2xl leading-7 mb-1 hover:text-secondary hover:cursor-pointer"
+            >
+              Tutorial Mengadu Ayam Jago
+            </a>
+            <div class="font-normal text-base flex gap-3 mb-3">
+              <p>12 Feb 2020</p>
+              <div class="border-l-[1px] y border-gray-800"></div>
+              <p class="text-light">Design, Pattern</p>
+            </div>
+            <p class="font-normal text-base tracking-normal">
+              Fazril minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- Card Post -->
+          <div class="post-item flex flex-col">
+            <a
+              href="../blog/details-blog.html"
+              class="font-medium text-xl md:text-2xl leading-7 mb-1 hover:text-secondary hover:cursor-pointer"
+            >
+              Tutorial Laravel 11 Dasar
+            </a>
+            <div class="font-normal text-base flex gap-3 mb-3">
+              <p>12 Feb 2020</p>
+              <div class="border-l-[1px] y border-gray-800"></div>
+              <p class="text-light">Design, Pattern</p>
+            </div>
+            <p class="font-normal text-base tracking-normal">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- Card Post -->
+          <div class="post-item flex flex-col">
+            <a
+              href="../blog/details-blog.html"
+              class="font-medium text-xl md:text-2xl leading-7 mb-1 hover:text-secondary hover:cursor-pointer"
+            >
+              Tutorial Laravel Filament - CRUD
+            </a>
+            <div class="font-normal text-base flex gap-3 mb-3">
+              <p>12 Feb 2020</p>
+              <div class="border-l-[1px] y border-gray-800"></div>
+              <p class="text-light">Design, Pattern</p>
+            </div>
+            <p class="font-normal text-base tracking-normal">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <!-- Card Post -->
+          <div class="post-item flex flex-col">
+            <a
+              href="../blog/details-blog.html"
+              class="font-medium text-xl md:text-2xl leading-7 mb-1 hover:text-secondary hover:cursor-pointer"
+            >
+              Tutorial Tailwind CSS Dasar
+            </a>
+            <div class="font-normal text-base flex gap-3 mb-3">
+              <p>12 Feb 2020</p>
+              <div class="border-l-[1px] y border-gray-800"></div>
+              <p class="text-light">Design, Pattern</p>
+            </div>
+            <p class="font-normal text-base tracking-normal">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="border-b-[1px] border-[#E0E0E0] mt-3"></div>
+          </div>
+
+          <div id="not-found" class="hidden">
+            <p class="italic">Blog tidak ditemukan...</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="join">
+            <button class="join-item btn btn-active">1</button>
+            <button class="join-item btn">2</button>
+            <button class="join-item btn">3</button>
+            <button class="join-item btn">4</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container mt-20 mb-20 md:mb-0">
+        <div class="py-10 flex flex-col justify-center items-center gap-5">
+          <ul class="flex justify-center items-center gap-6">
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/fb.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/insta.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/twt.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="../../../public/assets/icons/Linkedin.svg"
+                  alt="contact-icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="font-normal text-sm">Copyright ©2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../scripts/script.js"></script>
+  </body>
+</html>
